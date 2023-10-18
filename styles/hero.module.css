@@ -2,6 +2,12 @@
     padding: 20px;
     border: solid 2px currentColor;
     color: darkblue;
+    animation: slideIn 3s;
+}
+
+@keyframes slideIn {
+    from{}
+    to {}
 }
 
 .title {
