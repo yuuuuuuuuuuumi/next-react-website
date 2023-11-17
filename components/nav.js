@@ -6,8 +6,8 @@ export default function Nav() {
         <nav>
             <ul className={StyleSheet.list}>
                 <li>
-                    <Link href="/">
-                      <a>Home</a>
+                    <Link href="/" onclick={closeNav}>
+                      Home
                     </Link>
                 </li>
                 <li>
