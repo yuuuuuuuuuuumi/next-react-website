@@ -4,20 +4,20 @@ import styles from 'styles/nav.module.css'
 export default function Nav() {
     return (
         <nav>
-            <ul className={StyleSheet.list}>
+            <ul className={styles.list}>
                 <li>
-                    <Link href="/" onclick={closeNav}>
+                    <Link href="/" >
                       Home
                     </Link>
                 </li>
                 <li>
                     <Link href="/about">
-                      <a>About</a>
+                      About
                     </Link>
                 </li>
                 <li>
                     <Link href="/blog">
-                      <a>Blog</a>
+                      Blog
                     </Link>
                 </li>
             </ul>

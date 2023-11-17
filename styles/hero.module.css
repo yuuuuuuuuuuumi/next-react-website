@@ -1,6 +1,10 @@
+
+
 .flexContainer {
    composes: sideBySideCenter from 'styles/utils.module.css';
+
 }
+
 
 .text {
     padding: calc(var(--display) * 0.5);
