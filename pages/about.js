@@ -6,10 +6,11 @@ import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-colum
 
 export default function About() {
     return (
-      <Container>
+    <Container>
         <Hero title="About" subtitle="About development activities" />
 
-        <TwoColumn>
+      <TwoColumn>
+        <TwoColumnMain>
           <PostBody>
             <p>
               Cube
@@ -34,9 +35,12 @@ export default function About() {
               これからも続けていきたいです。
             </p>
           </PostBody>
+        </TwoColumnMain>
 
-          <contact />
-        </TwoColumn>
-      </Container>
-    );
+        <TwoColumnSidebar> 
+            <contact />
+        </TwoColumnSidebar> 
+      </TwoColumn>
+    </Container>
+    )
 }

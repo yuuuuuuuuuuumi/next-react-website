@@ -3,7 +3,7 @@ import style from 'styles/two-column.module.css'
 
 export function TwoColumn({ children }) {
     return (
-        <div className={styles.flexContainer}>
+        <div className={style.flexContainer}>
             {children}
         </div>
     )
