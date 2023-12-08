@@ -13,3 +13,21 @@
     align-items: center;
     gap: 0.5em;
 }
+
+.graidContainer {
+    display: grid;
+    grid: var(--space-jump);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-lg);
+}
+
+.post2 h2 {
+    margin-top: 0.5em;
+    font-size: var(--small-heading3);
+    font-weight: 400;
+}
+
+.post figure {
+    position: relative;
+    aspect-ratio: 16/9;
+}
