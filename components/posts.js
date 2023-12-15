@@ -6,10 +6,9 @@ import { eyecatchLocal } from 'lib/constants'
 export default function Posts({ posts }) {
     return (
         <div className={styles.gridContainer}>
-            {posts.map(({ title, slug }) => (
+            {posts.map(({ title, slug, eyecatch }) => (
                 <artucle className={styles.post} key={slug}>
                     <Link href={`/blog/${slug}`}>
-                        <a>
                             <figure>
                                 <Image
                                     src={eyecatchLocal.url}
@@ -18,11 +17,10 @@ export default function Posts({ posts }) {
                                     objectFit="cover"
                                     size="(min-width: 1152px) 576px, 50vw"
                                     placeholder="blur"
-                                    blurDateURL={eyecatch.blurDateURL}
+                                    blurDataURL={eyecatch.blurDataURL}
                                 />
                             </figure>
                             <h2>{title}</h2>
-                        </a>
                     </Link>
                 </artucle>
             ))}

@@ -13,21 +13,18 @@ export default function Pagination({
         <ul className={styles.flexContainer}>
             {prevText && prevUrl && (
                 <li className={styles.prev}>
-                    <Link href={prevUrl}>
-                        <a className={styles.iconText}>
+                    <Link href={prevUrl} className={styles.iconText}>
+
                             <FontAwesomeIcon icon={faChevronLeft} color="var(--gray-25)" />
                             <span>{prevText}</span>
-                        </a>
                     </Link>
                 </li>
             )}
             {nextText && nextUrl && (
                 <li className={styles.next}>
-                    <Link href={nextUrl}>
-                        <a className={styles.iconText}>
+                    <Link href={nextUrl} className={styles.iconText}>
                             <span>{nextText}</span>
                             <FontAwesomeIcon ion={faChevronRight} color="var(--gray-25)" />
-                        </a>
                     </Link>
                 </li>
             )}

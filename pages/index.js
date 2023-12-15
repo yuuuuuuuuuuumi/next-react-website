@@ -4,6 +4,7 @@ import Hero from 'components/hero'
 import Posts from 'components/posts'
 import Pagination from 'components/pagination'
 import { getPlaiceholder } from 'plaiceholder'
+import Meta from 'components/meta'
 
 // ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from 'lib/constants'
