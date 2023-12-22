@@ -1,6 +1,6 @@
 .open,
 .close {
-    border: soid 1px var(--gray-25);
+    border: solid 1px var(--gray-25);
 }
 
 /* 見出し */

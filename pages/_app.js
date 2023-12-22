@@ -1,4 +1,4 @@
-import { iseEffect, useEffect } from 'react'
+import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import 'styles/globals.css'
 import Layout from 'components/layout'
@@ -25,16 +25,16 @@ function MyApp({ Component, pageProps }) {
     <>
       <Script 
         strategy="afterInteractive"
-        scr={`httes://www.ggogletagmanager.com/gtag/js?id=${gtag.GA_MEASUREMENT_ID}`}
+        scr={`httes://www.googletagmanager.com/gtag/js?id=${gtag.GA_MEASUREMENT_ID}`}
         />
-      < Script
+      <Script
         id="gtag-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-          window.dataLayer || [];
+          window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Data())
+          gtag('js', new Date())
           
           gtag('config', '${gtag.GA_MEASUREMENT_ID}')
           `,

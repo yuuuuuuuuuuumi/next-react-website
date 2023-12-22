@@ -6,7 +6,7 @@ import Container from 'components/container'
 import PostHeader from 'components/post-header'
 import Post from 'components/post-body'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/teo-column'
-import ConverBody from 'components/convert-body'
+import ConvertBody from 'components/convert-body'
 import PostCategories from 'components/post-categories'
 import Pagination from 'components/pagination'
 import Image from 'next/image'
@@ -26,7 +26,7 @@ export default function Post({
     nextPost,
 }) {
     return (
-        <container>
+        <Container>
             <Meta
                 pageTitle={title}
                 pageDesc={description}
@@ -71,7 +71,7 @@ export default function Post({
                     nextUrl={`/blog/${nextPost.slug}`}
                 />
             </article>
-        </container>
+        </Container>
     )
 }
 
@@ -96,7 +96,7 @@ export async function getStaticProps(context) {
 
         const eyecatch = post.eyecatch ?? eyecatchLocal
 
-        const { base64 } = await getPlaiceholderr(eyecatch.url)
+        const { base64 } = await getPlaiceholder(eyecatch.url)
         eyecatch.blurDataURL = base64
 
         const allSlugs = await getAllSlugs()

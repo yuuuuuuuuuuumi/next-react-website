@@ -4,7 +4,7 @@ import Hero from 'components/hero'
 import PostBody from 'components/post-body'
 import Contact from 'components/contact'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
-import Accordion from 'components/accordion-anim'
+import Accordion from 'components/accordion'
 import Image from 'next/image'
 import eyecatch from 'images/about.jpg'
 
@@ -24,7 +24,7 @@ export default function About() {
         <figure>
           <Image
             src={eyecatch}
-            alt=''
+            alt=""
             layout="responsive"
             sizes="(min-width: 1152px) 1152px, 100vw"
             priority

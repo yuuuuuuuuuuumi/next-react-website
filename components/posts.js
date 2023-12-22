@@ -11,7 +11,7 @@ export default function Posts({ posts }) {
                     <Link href={`/blog/${slug}`}>
                             <figure>
                                 <Image
-                                    src={eyecatchLocal.url}
+                                    src={eyecatch.url}
                                     alt=""
                                     layout="fill"
                                     objectFit="cover"
