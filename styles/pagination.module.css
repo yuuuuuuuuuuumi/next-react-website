@@ -1,7 +1,7 @@
 .flexContainer {
-    composes: spanBetween from 'styles/utils.module.css';
+    composes: spaceBetween from 'styles/utils.module.css';
     margin: var(--space-lg) 0;
-    gap: lem;
+    gap: 1em;
 }
 
 .next {
@@ -16,7 +16,8 @@
 
 .graidContainer {
     display: grid;
-    grid: var(--space-jump);
+    grid-template-columns: 1fr 1fr;
+    grid: var(--space-xs);
     margin-top: var(--space-xs);
     margin-bottom: var(--space-lg);
 }

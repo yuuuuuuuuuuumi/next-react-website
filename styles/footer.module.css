@@ -3,7 +3,7 @@
     background-color: var(--gray-10);
 }
 
-.flexComtainer {
+.flexContainer {
     composes: sideBySideCenter from 'styles/utils.module.css';
     gap: 2em;
 }

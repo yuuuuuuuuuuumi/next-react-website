@@ -12,12 +12,17 @@ export default function Hero({ title, subtitle, imageOn = false }) {
             {imageOn && (
                 <figure className={styles.image}>
                     <Image
+                        style={{
+                            width: '100%',
+                            height: 'auto'
+                        }}
                         src={cube}
                         alt=""
                         layout="reaponsive"
-                        size="(min-width: 1152px) 576px, (min-width: 768px) 50vw, 100vw"
+                        sizes="(min-width: 1152px) 576px, (min-width: 768px) 50vw, 100vw"
                         priority
                         placeholder='blur'
+
                     />
                 </figure>
             )}

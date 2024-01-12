@@ -24,7 +24,7 @@
 /* 見出しのアイコン */
 .icon {
     color: var(--gray-25);
-    font-size: 1.225em;
+    font-size: 1.25em;
     transition: transform 0.5s;
 }
 

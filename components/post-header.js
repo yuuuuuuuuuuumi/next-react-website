@@ -11,7 +11,7 @@ export default function PostHeader({ title, subtitle, publish = '' }) {
             {publish && (
                 <div className={styles.publish}>
                     <FontAwesomeIcon icon={faClock} size="lg" color="var(--gray-25)" />
-                    <ConverDate dateISO={publish} />
+                    <ConvertDate dateISO={publish} />
                 </div>
             )}
         </div>

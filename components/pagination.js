@@ -24,7 +24,7 @@ export default function Pagination({
                 <li className={styles.next}>
                     <Link href={nextUrl} className={styles.iconText}>
                             <span>{nextText}</span>
-                            <FontAwesomeIcon ion={faChevronRight} color="var(--gray-25)" />
+                            <FontAwesomeIcon icon={faChevronRight} color="var(--gray-25)" />
                     </Link>
                 </li>
             )}

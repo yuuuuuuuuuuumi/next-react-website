@@ -4,8 +4,8 @@ import { prevNextPost } from 'lib/prev-next-post'
 import Meta from 'components/meta'
 import Container from 'components/container'
 import PostHeader from 'components/post-header'
-import Post from 'components/post-body'
-import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/teo-column'
+import PostBody from 'components/post-body'
+import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
 import ConvertBody from 'components/convert-body'
 import PostCategories from 'components/post-categories'
 import Pagination from 'components/pagination'
@@ -75,8 +75,8 @@ export default function Post({
     )
 }
 
-export async function getStaticPath() {
-    const allSlugs = await getAllSlugs(5)
+export async function getStaticPaths() {
+    const allSlugs = await getAllSlugs(5);
 
     return {
         paths: allSlugs.map(({ slug }) => `/blog/${slug}`),
@@ -92,15 +92,15 @@ export async function getStaticProps(context) {
         return { notFound: true }
     } else {
 
-        const description = extractText(post.content)
+        const description = extractText(post.content);
 
-        const eyecatch = post.eyecatch ?? eyecatchLocal
+        const eyecatch = post.eyecatch ?? eyecatchLocal;
 
-        const { base64 } = await getPlaiceholder(eyecatch.url)
-        eyecatch.blurDataURL = base64
+        const { base64 } = await getPlaiceholder(eyecatch.url);
+        eyecatch.blurDataURL = base64;
 
-        const allSlugs = await getAllSlugs()
-        cont[prevNextPost, nextPost] = prevNextPost(allSlugs, slug)
+        const allSlugs = await getAllSlugs();
+        const[prevPost, nextPost] = prevNextPost(allSlugs, slug);
 
         return {
             props: {
@@ -113,7 +113,7 @@ export async function getStaticProps(context) {
                 prevPost: prevPost,
                 nextPost: nextPost,
             },
-        }
+        };
     }
 }
 
