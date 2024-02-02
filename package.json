@@ -2,7 +2,7 @@
   "name": "next-react-website",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+  "/mnt/c/Users/miyab/2023/web_b/next-react-website/.nextscripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -24,7 +24,7 @@
     "posts": "^0.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sharp": "^0.33.2"
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
     "eslint": "8.56.0",
